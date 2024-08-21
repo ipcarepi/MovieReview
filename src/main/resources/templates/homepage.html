@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Movie Review
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div th:if = "${loginId != null}"
+     th:text="|Hello! ${loginId}|" />
+<p>Welcome to Movie Reviewing site! This is the homepage of Movie Review.</p>
+</body>
+
+</html>

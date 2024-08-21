@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Movie Review - joined
+    </title>
+</head>
+<body>
+Hello! Your account is created! <br>
+<div th:if = "${joinName != null}"
+     th:text="|Name : ${joinName}|" />
+<div th:if = "${joinId != null}"
+     th:text="|Id : ${joinId}|" />
+<div th:if = "${joinPassword != null}"
+     th:text="|Password : ${joinPassword}|" />
+<button type="button" onclick="location.href='index.html'">login</button>
+</body>
+</html>
